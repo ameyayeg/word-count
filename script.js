@@ -15,9 +15,9 @@ function check() {
     
     const longestWord = newArray.reduce(function(longest, currentWord) {
         if(currentWord.length > longest.length) {
-            return currentWord.replace(".", "")
+            return currentWord.replaceAll(/\W/g, '')
         } else {
-            return longest.replace(".", "")
+            return longest.replaceAll(/\W/g, '')
         }
     })
     longWord.textContent = longestWord
