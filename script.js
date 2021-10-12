@@ -8,7 +8,7 @@ count.addEventListener('input', check)
 function check() {
     const input  = count.value
     const newArray = input.split(' ')
-    countWord.textContent = newArray.length - 1
+    countWord.textContent = input.match(/\S+/g).length 
 
     const char = newArray.join('')
     countChar.innerText = char.length
