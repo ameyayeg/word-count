@@ -1,2 +1,3 @@
-# word-counter
- A simple word-counter app.
+# Word counter
+ 
+A simple word-counter app.
