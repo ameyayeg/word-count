@@ -2,6 +2,7 @@ const count = document.getElementById('text')
 const countWord = document.getElementById('countword')
 const countChar = document.getElementById('countchar')
 const longWord = document.getElementById('longword')
+const yearCopy = document.querySelector('.year')
 
 count.addEventListener('input', check)
 
@@ -23,3 +24,5 @@ function check() {
     longWord.textContent = longestWord
 
 }
+
+yearCopy.innerHTML = (new Date().getFullYear());

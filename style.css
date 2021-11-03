@@ -22,15 +22,14 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  overflow: hidden;
 }
 
 textarea {
   font-size: 1.5rem;
   padding: 0.5em;
   max-width: 80%;
-  height: 60%;
   transition: outline 0.5s ease;
+  margin-top: 1em;
 }
 
 textarea:focus {
@@ -42,4 +41,24 @@ textarea:focus {
   color: yellowgreen;
   font-size: 2em;
   margin-top: 1em;
+}
+
+footer {
+  text-align: center;
+  font-family: 'Mulish', sans-serif;
+  width: 100%;
+  background-color: antiquewhite;
+  padding: 1em;
+  font-size: 1.2rem;
+  margin-top: 1em;
+}
+
+footer .twitter {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer .twitter:hover,
+footer .twitter:focus {
+  color: rebeccapurple;
 }
